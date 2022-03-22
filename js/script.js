@@ -7,12 +7,12 @@
 /**
  * This function gets users street number and street name and shows it back to user.
  */
-function myButtonClicked() {
+function enterClicked() {
   // input
-  const streetNumber = document.getElementById("street-number").value
+  const streetNumber = parseInt(document.getElementById("street-number").value)
   const streetName = document.getElementById("street-name").value
 
   // output
-  document.getElementById("address").innerHTML = 
-    "<p>Your address is: " streetNumber + streetName ".</p>";
+  document.getElementById("user-address").innerHTML = 
+    "Your address is: " streetNumber + streetName ".";
 }
